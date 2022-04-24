@@ -203,7 +203,7 @@ map.on('load', function () {
           if (station.length > 0) {
             document.getElementById('pd').innerHTML = description;
           } else {
-            document.getElementById('pd').innerHTML = '<p>Hover Over a State for Detail!</p>';
+            document.getElementById('pd').innerHTML = '<p>Hover over a state icon for price</p>';
           }
 
     });
@@ -212,7 +212,7 @@ map.on('load', function () {
         map.setFilter("color-Hover",["==","GEOID",""]);
         map.setFilter("outline-Hover",["==","GEOID",""]);
         map.getCanvas().style.cursor = '';
-        document.getElementById('pd').innerHTML = '<h6 style="color:grey;">Hover over a state for price</h6>';
+        document.getElementById('pd').innerHTML = '<h6 style="color:grey;">Hover over a state icon for price</h6>';
     });
 
 });
@@ -480,7 +480,7 @@ $('#download').click(function(){
         if (station0.length > 0) {
           document.getElementById('pd').innerHTML = description2;
         } else {
-          document.getElementById('pd').innerHTML = '<p>Hover Over a County for Detail!</p>';
+          document.getElementById('pd').innerHTML = '<p>Hover over a state icon for price</p>';
         }
 
   });
@@ -489,7 +489,7 @@ $('#download').click(function(){
     map.setFilter("new-color-Hover",["==","GEOID",""]);
     map.setFilter("new-outline-Hover",["==","GEOID",""]);
       map.getCanvas().style.cursor = '';
-      document.getElementById('pd').innerHTML = '<h6 style="color:grey;">Hover over a state for price</h6>'});
+      document.getElementById('pd').innerHTML = '<h6 style="color:grey;">Hover over a state icon for price</h6>'});
 
 
       map.on('click', 'new-prediction', function (e) {
