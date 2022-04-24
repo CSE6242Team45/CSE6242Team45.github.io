@@ -210,7 +210,7 @@ map.on('load', function () {
 
     });
 
-    map.on('mouseleave', 'color', function() {
+    map.on('mouseleave', 'prediction', function() {
         map.setFilter("color-Hover",["==","GEOID",""]);
         map.setFilter("outline-Hover",["==","GEOID",""]);
         map.getCanvas().style.cursor = '';
@@ -463,7 +463,7 @@ $('#download').click(function(){
                'line-width':2}
       
     });
-    map.on('mouseenter', 'new-color', function(e) {
+    map.on('mouseenter', 'new-prediction', function(e) {
       // Change the cursor style as a UI indicator.
       map.getCanvas().style.cursor = 'pointer';
       map.setFilter("new-color-Hover",["==","GEOID",e.features[0].properties.GEOID]);
@@ -494,7 +494,7 @@ $('#download').click(function(){
       document.getElementById('pd').innerHTML = '<h6 style="color:grey;">Hover over a state icon for price</h6>'});
 
 
-      map.on('click', 'new-prediction', function (e) {
+      map.on('click', 'new-color', function (e) {
         map.flyTo({center: e.features[0].geometry.coordinates[0][0]});
         var coordinates = e.features[0].geometry.coordinates.slice()[0][0];
     
