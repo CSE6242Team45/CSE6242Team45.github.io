@@ -15,7 +15,7 @@ Open-source **[Dashboard](https://cse6242team45.github.io/)**. It provides an in
 
 > Links
 
-- 👉 [Background](https://cse6242team45.github.io/)
+- 👉 [Background Reading](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1408234)
 - 👉 [Video Demo](https://cse6242team45.github.io/)
 
 <br />
@@ -109,7 +109,6 @@ The project is coded using blueprints, app factory pattern, dual configuration p
 
 ## ✨ Credits & Links
 
-- [Dashboard Framework](https://cse6242team45.github.io/)
 - [USDA Data Source](https://quickstats.nass.usda.gov/)
 - [Course Link](https://omscs.gatech.edu/cse-6242-data-visual-analytics)
 
