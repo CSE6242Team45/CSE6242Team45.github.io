@@ -49,7 +49,7 @@ The app is hosted by **[GitHub Pages](https://pages.github.com/)**.
 
 > General steps to host any project on **GitHub Pages**:
 
-- [Create a public repository](https://github.com/new) named username.github.io, where username is your username (or organization name) on GitHub
+- [Create a public repository](https://github.com/new) named **[username].github.io**, where username is your username (or organization name) on GitHub
 - Clone the repository
 - Add, commit, and push your files (e.g., HTML)
 - Open a browser and go to https://username.github.io
