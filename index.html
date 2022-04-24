@@ -50,8 +50,8 @@
 
 
       <div id="prediction" style="border-radius: 10px; background-color:rgba(180,231,206,0.6); color:#474A2C; font-size:16px">
-      <p style="margin-left:2%; margin-top:2%; margin-bottom:1%;">To start, select the crop and year-month you are interseted in from the dropdown buttons and click predict 
-        to view the predicted nominal price per BU or CWT. Then click on a state icon to view the next five year nominal price trend by month.</p>
+      <p style="margin-left:2%; margin-top:2%; margin-bottom:1%;text-align:justify;margin-right:3%;">To start, select the crop and year-month you are interested in from the dropdown lists and click "predict" 
+        to view the predicted nominal price per CWT (potatoes) or BU (all other crops). Then click on a state icon to view the predicted nominal price trend by month for the next five years.</p>
       <select id="crops" style="margin-left:2%; margin-bottom:2%">
         <option>Barley</option>
         <option>Corn</option>
@@ -130,17 +130,17 @@
       </div>
 
       <div id="yield" >
-        <button id="s0"> Historical Yield <i class="fa-solid fa-arrow-right"></i></button>
+        <button id="s0" style="margin-top:8%"> Historical Yield <i class="fa-solid fa-arrow-right"></i></button>
       </div>
 
       <div id="yieldconsole" style="display: none;">
           
-       <p>Click the navigation icon on the top right of the map to view the yield near you.</p>
+       <p>Click the navigation icon on top right of the map to geolocate yourself and view the yield near you.</p>
 
         <h5 style="color:grey">Historical Yield by Crops and Year</h5>      
       
         <div class='session' style="margin-left:2%; margin-top:2%; margin-bottom:4%;">
-        <h6 style="margin-top:2%;">Yield (BU or CWT per Acre)</h6>
+        <h6 style="margin-top:2%;">Yield: CWT (potatoes) or BU (all other crops) / Acre</h6>
         <div class='row colors'style="margin-left:2%; margin-top:2%; margin-bottom:1%;">
         </div>
         <div class='row labels'style="margin-left:2%; margin-top:2%; margin-bottom:1%;">
@@ -154,12 +154,12 @@
       </div>
 
         <div class='session' id='sliderbar' style="margin-left:5%; margin-top:2%; margin-bottom:4%;">
-        <h6  style="margin-left:-2%;">Year: <label id='active-year'>2012</label></h6>
+        <h6  style="margin-left:-3%;margin-top:8%">Selected year: <label id='active-year'>2012</label></h6>
           <input id='slider' class='row' type='range' min='2007' max='2021' step='1' value='2012' />
         </div>
 
         <div class='session' style="margin-left:2%; margin-top:2%; margin-bottom:4%;">
-          <h6 style="margin-top:2%;">Select a Crop</h6>
+          <h6 style="margin-top:2%;">Select a Crop:</h6>
           <div class='row' style="margin-left:2%; margin-top:2%; margin-bottom:1%;" id='filters'>
             <input id='Barley' type='radio' name='toggle' value='Barley' checked='checked'>
             <label for='Barley'>Barley</label>
