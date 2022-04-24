@@ -308,22 +308,7 @@ $('#download').click(function(){
     })
   })
 
-  // var newData
-  // d3.csv(csv_path, function(data) {
-  //   filteredData = data.filter(function(row){
-  //     return (row["month"] == 8);
-  //   });
-  //   newData = filteredData.map(function(d){
-  //     return {
-  //       "state_fips_code":d.state_fips_code,
-  //       "formatted_date":d.formmated_date,
-  //       "unit_desc":d.unit_desc,
-  //       "Value":d.Value
 
-  //     }
-  //   })
-  //   console.log(newData);
-  // })
 
 
 })

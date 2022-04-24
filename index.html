@@ -50,8 +50,8 @@
 
 
       <div id="prediction" style="border-radius: 10px; background-color:rgba(180,231,206,0.6); color:#474A2C; font-size:16px">
-      <p style="margin-left:2%; margin-top:2%; margin-bottom:1%;">To start with, what crop are interseted in?</p>
-      <p style="margin-left:2%; margin-top:2%; margin-bottom:1%;">Click on a state to see future price trend</p>
+      <p style="margin-left:2%; margin-top:2%; margin-bottom:1%;">To start with, select the crop and year-month you are interseted in from the dropdown button and click predict 
+        to view the predicted price per BU or CWT. Then click on a state icon to view the next five year future price trend by month</p>
       <select id="crops" style="margin-left:2%; margin-bottom:2%">
         <option>Barley</option>
         <option>Corn</option>
@@ -122,13 +122,10 @@
  
       <button id="viewAll" class="btn btn-sm collapsed"
       style="background-color:rgba(180,231,206,0.1); color:#474A2C; font-weight:bold; font-size:18px">
-      <i class="fa-solid fa-play"></i>&nbsp;Click and predict!</button>
+      <i class="fa-solid fa-play"></i>&nbsp;Predict Price!</button>
       <button id="download" class="btn btn-sm collapsed"
       style="background-color:rgba(180,231,206,0.1); color:#474A2C; font-weight:bold; font-size:18px">
-      <i class="fa-solid fa-download"></i>&nbsp;Download Data</button>
-      <button id="downloadMap" class="btn btn-sm collapsed"
-      style="background-color:rgba(180,231,206,0.1); color:#474A2C; font-weight:bold; font-size:18px">
-      <i class="fa-solid fa-download"></i>&nbsp;Download Map as a PNG</button>
+      <i class="fa-solid fa-download"></i>&nbsp;Download Predicted Price</button>
 
       </div>
 
@@ -142,8 +139,8 @@
 
         <h5 style="color:grey">Historical Yield by Crops and Year</h5>      
       
-        <div class='session' style="margin-left:2%; margin-top:2%; margin-bottom:1%;">
-        <h5>Yield</h5>
+        <div class='session' style="margin-left:2%; margin-top:2%; margin-bottom:4%;">
+        <h6 style="margin-top:2%;">Yield (BU or CWT per Acre)</h6>
         <div class='row colors'style="margin-left:2%; margin-top:2%; margin-bottom:1%;">
         </div>
         <div class='row labels'style="margin-left:2%; margin-top:2%; margin-bottom:1%;">
@@ -156,13 +153,13 @@
         </div>
       </div>
 
-        <div class='session' id='sliderbar' style="margin-left:5%; margin-top:2%; margin-bottom:1%;">
-          <h6>Year: <label id='active-year'>2012</label></h6>
+        <div class='session' id='sliderbar' style="margin-left:5%; margin-top:2%; margin-bottom:4%;">
+        <h6  style="margin-left:-2%;">Year: <label id='active-year'>2012</label></h6>
           <input id='slider' class='row' type='range' min='2007' max='2021' step='1' value='2012' />
         </div>
 
-        <div class='session' style="margin-left:2%; margin-top:2%; margin-bottom:1%;">
-          <h6>Select a Crop</h6>
+        <div class='session' style="margin-left:2%; margin-top:2%; margin-bottom:4%;">
+          <h6 style="margin-top:2%;">Select a Crop</h6>
           <div class='row' style="margin-left:2%; margin-top:2%; margin-bottom:1%;" id='filters'>
             <input id='Barley' type='radio' name='toggle' value='Barley' checked='checked'>
             <label for='Barley'>Barley</label>
@@ -177,6 +174,8 @@
 
           </div>
         </div>
+
+        <div style="margin-left:2%; margin-top:2%; margin-bottom:4%;">
         <button id="download-yield" class="btn btn-sm collapsed"
         style="background-color:rgba(180,231,206,0.1); color:#474A2C; font-weight:bold; font-size:18px">
         <i class="fa-solid fa-download"></i>&nbsp;Download Yield Data</button>
@@ -186,9 +185,12 @@
         <button id="download-sales" class="btn btn-sm collapsed"
         style="background-color:rgba(180,231,206,0.1); color:#474A2C; font-weight:bold; font-size:18px">
         <i class="fa-solid fa-download"></i>&nbsp;Download Sales Data</button>
+       </div>
+
         <div id="back" >
           <button id="s1"><i class="fa-solid fa-arrow-left"></i>Go Back to Future Prediction </button>
         </div>
+
 
       </div>
 
