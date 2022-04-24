@@ -96,6 +96,7 @@ The project is coded using blueprints, app factory pattern, dual configuration p
    |    |-- new.js                                         #
    |-- screencaptures/
    |    |-- dashboard1.png                                 #    
+   |    |-- dashboard2.png                                 #    
    |-- .DS_Store
    |-- PricePred.geojson
    |-- README.md
