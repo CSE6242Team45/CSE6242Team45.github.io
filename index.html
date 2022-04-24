@@ -50,7 +50,8 @@
 
 
       <div id="prediction" style="border-radius: 10px; background-color:rgba(180,231,206,0.6); color:#474A2C; font-size:16px">
-      <p style="margin-left:2%; margin-top:2%; margin-bottom:1%;">To start with, what crop are interseted in?</p>
+      <p style="margin-left:2%; margin-top:2%; margin-bottom:1%;">To start, select the crop and year-month you are interseted in from the dropdown buttons and click predict 
+        to view the predicted nominal price per BU or CWT. Then click on a state icon to view the next five year nominal price trend by month.</p>
       <select id="crops" style="margin-left:2%; margin-bottom:2%">
         <option>Barley</option>
         <option>Corn</option>
@@ -121,10 +122,11 @@
  
       <button id="viewAll" class="btn btn-sm collapsed"
       style="background-color:rgba(180,231,206,0.1); color:#474A2C; font-weight:bold; font-size:18px">
-      <i class="fa-solid fa-play"></i>&nbsp;Click and predict!</button>
+      <i class="fa-solid fa-play"></i>&nbsp;Predict Price!</button>
       <button id="download" class="btn btn-sm collapsed"
       style="background-color:rgba(180,231,206,0.1); color:#474A2C; font-weight:bold; font-size:18px">
-      <i class="fa-solid fa-download"></i>&nbsp;Download Data</button>
+      <i class="fa-solid fa-download"></i>&nbsp;Download Predicted Price</button>
+
       </div>
 
       <div id="yield" >
@@ -132,14 +134,16 @@
       </div>
 
       <div id="yieldconsole" style="display: none;">
+          
+       <p>Click the navigation icon on the top right of the map to view the yield near you.</p>
 
-        <h5 style="color:grey">Historical Yield by Crops and Year</h5>
+        <h5 style="color:grey">Historical Yield by Crops and Year</h5>      
       
-        <div class='session' >
-        <h5>Yield</h5>
-        <div class='row colors'>
+        <div class='session' style="margin-left:2%; margin-top:2%; margin-bottom:4%;">
+        <h6 style="margin-top:2%;">Yield (BU or CWT per Acre)</h6>
+        <div class='row colors'style="margin-left:2%; margin-top:2%; margin-bottom:1%;">
         </div>
-        <div class='row labels'>
+        <div class='row labels'style="margin-left:2%; margin-top:2%; margin-bottom:1%;">
           <div class='label'>0</div>
           <div class='label'>25</div>
           <div class='label'>50</div>
@@ -149,14 +153,14 @@
         </div>
       </div>
 
-        <div class='session' id='sliderbar'>
-          <h6>Year: <label id='active-year'>2012</label></h6>
+        <div class='session' id='sliderbar' style="margin-left:5%; margin-top:2%; margin-bottom:4%;">
+        <h6  style="margin-left:-2%;">Year: <label id='active-year'>2012</label></h6>
           <input id='slider' class='row' type='range' min='2007' max='2021' step='1' value='2012' />
         </div>
 
-        <div class='session'>
-          <h6>Select a Crop</h6>
-          <div class='row' id='filters'>
+        <div class='session' style="margin-left:2%; margin-top:2%; margin-bottom:4%;">
+          <h6 style="margin-top:2%;">Select a Crop</h6>
+          <div class='row' style="margin-left:2%; margin-top:2%; margin-bottom:1%;" id='filters'>
             <input id='Barley' type='radio' name='toggle' value='Barley' checked='checked'>
             <label for='Barley'>Barley</label>
             <input id='Corn' type='radio' name='toggle' value='Corn'>
@@ -170,6 +174,8 @@
 
           </div>
         </div>
+
+        <div style="margin-left:2%; margin-top:2%; margin-bottom:4%;">
         <button id="download-yield" class="btn btn-sm collapsed"
         style="background-color:rgba(180,231,206,0.1); color:#474A2C; font-weight:bold; font-size:18px">
         <i class="fa-solid fa-download"></i>&nbsp;Download Yield Data</button>
@@ -179,9 +185,12 @@
         <button id="download-sales" class="btn btn-sm collapsed"
         style="background-color:rgba(180,231,206,0.1); color:#474A2C; font-weight:bold; font-size:18px">
         <i class="fa-solid fa-download"></i>&nbsp;Download Sales Data</button>
+       </div>
+
         <div id="back" >
           <button id="s1"><i class="fa-solid fa-arrow-left"></i>Go Back to Future Prediction </button>
         </div>
+
 
       </div>
 

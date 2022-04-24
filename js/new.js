@@ -308,22 +308,7 @@ $('#download').click(function(){
     })
   })
 
-  // var newData
-  // d3.csv(csv_path, function(data) {
-  //   filteredData = data.filter(function(row){
-  //     return (row["month"] == 8);
-  //   });
-  //   newData = filteredData.map(function(d){
-  //     return {
-  //       "state_fips_code":d.state_fips_code,
-  //       "formatted_date":d.formmated_date,
-  //       "unit_desc":d.unit_desc,
-  //       "Value":d.Value
 
-  //     }
-  //   })
-  //   console.log(newData);
-  // })
 
 
 })
@@ -648,21 +633,21 @@ $('#download').click(function(){
             ['linear'],
             ['number', ['get', 'Value']],
             0,
-            '#c51b7d',
+            '#fee6ce',
             25,
-            '#de77ae',
+            '#fdd0a2',
             50,
-            '#f1b6da',
+            '#fdae6b',
             100,
-            '#fde0ef',
+            '#fd8d3c',
             200,
-            '#ffffbf',
+            '#f16913',
             500,
-            '#b8e186',
+            '#d94801',
             800,
-            '#7fbc41',
+            '#a63603',
             1000,
-            '#4d9221'
+            '#7f2704'
           ],
           'circle-opacity': 0.8
         },
