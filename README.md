@@ -36,7 +36,8 @@ Make the desired modifications and host the code in your own git repo (see more 
 
 <br />
 
-![Screen Capture.](/screencaptures/dashboard1.png)
+![Screen Capture1.](/screencaptures/dashboard1.png)
+![Screen Capture2.](/screencaptures/dashboard2.png)
 
 <br />
 
