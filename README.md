@@ -58,7 +58,7 @@ The app is hosted by **[GitHub Pages](https://pages.github.com/)**.
 
 ## ✨ Code-base structure
 
-The project is coded using blueprints, app factory pattern, dual configuration profile (development and production), and an intuitive structure presented below:
+The project is mainly coded using **CSS, Javascript, and HTML** along with **Python** for web scraping and data cleaning. The files structures are shown below:
 
 ```bash
 < PROJECT ROOT >
