@@ -6,9 +6,10 @@ Open-source **[Dashboard](https://cse6242team45.github.io/)**. It provides an in
 > Features
 
 - `Crop price prediction` from time series models
-- Visualization of `crop production` on the geomap
-- 'Data filtering' by crop and year(month)
 - `Data and map download` functionalities
+- Visualization of `crop production` on the geomap
+- `Data filtering` by crop and year(month)
+- `Geolocate` functionality
 
 <br />
 
