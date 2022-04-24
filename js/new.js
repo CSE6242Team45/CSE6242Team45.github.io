@@ -61,7 +61,7 @@ var landingPage =function(){
     
 
     //Create click Event
-    map.on('click', 'prediction', function (e) {
+    map.on('click', 'color', function (e) {
       map.flyTo({center: e.features[0].geometry.coordinates[0][0]});
       var coordinates = e.features[0].geometry.coordinates.slice()[0][0];
   
