@@ -26,9 +26,7 @@ Open-source **[Dashboard](https://cse6242team45.github.io/)**. It provides an in
 
 You do NOT need to install anything to access the dashboard. Simply go to https://cse6242team45.github.io/
 
-For further development:
-
-> Get the code
+> For developers:
 
 ```bash
 $ git clone https://github.com/CSE6242Team45/CSE6242Team45.github.io.git
