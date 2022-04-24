@@ -27,6 +27,17 @@ var landingPage =function(){
         map.addSource('pred',{type:'geojson',data:parsedData});
  
         map.addLayer({
+          "id":"prediction",
+          "type":"symbol",
+          "source":"pred",
+          "filter":
+          ["==","Field2","Corn"],
+          "layout":{
+            "icon-image":"garden-11"
+          }
+        });
+
+        map.addLayer({
           "id":"color",
           "type":"fill",
           "source":"pred",
@@ -45,16 +56,7 @@ var landingPage =function(){
           "paint":{'line-color':'gray',
                    'line-width':2}  
         });
-        map.addLayer({
-          "id":"prediction",
-          "type":"symbol",
-          "source":"pred",
-          "filter":
-          ["==","Field2","Corn"],
-          "layout":{
-            "icon-image":"garden-11"
-          }
-        });
+
     });
     
 
@@ -407,6 +409,17 @@ $('#download').click(function(){
     
 
     map.addLayer({
+      "id":"new-prediction",
+      "type":"symbol",
+      "source":"pred",
+      "filter":
+      ["==","Field2",availability],
+      "layout":{
+        "icon-image":"garden-11"
+      }
+  });
+
+    map.addLayer({
       "id":"new-color",
       "type":"fill",
       "source":"pred",
@@ -427,17 +440,6 @@ $('#download').click(function(){
                'line-width':2}
       
     });
-
-    map.addLayer({
-      "id":"new-prediction",
-      "type":"symbol",
-      "source":"pred",
-      "filter":
-      ["==","Field2",availability],
-      "layout":{
-        "icon-image":"garden-11"
-      }
-  });
 
     map.addLayer({
       "id":"new-color-Hover",
@@ -461,7 +463,7 @@ $('#download').click(function(){
                'line-width':2}
       
     });
-    map.on('mouseenter', 'new-prediction', function(e) {
+    map.on('mouseenter', 'new-color', function(e) {
       // Change the cursor style as a UI indicator.
       map.getCanvas().style.cursor = 'pointer';
       map.setFilter("new-color-Hover",["==","GEOID",e.features[0].properties.GEOID]);
