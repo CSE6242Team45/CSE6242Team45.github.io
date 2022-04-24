@@ -16,7 +16,7 @@ Open-source **[Dashboard](https://cse6242team45.github.io/)**. It provides an in
 > Links
 
 - 👉 [Background Reading](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1408234)
-- 👉 [Video Demo](https://cse6242team45.github.io/)
+- 👉 [Video Demo](https://www.youtube.com/watch?v=qdmQ9vasPQM)
 
 <br />
 
